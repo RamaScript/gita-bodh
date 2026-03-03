@@ -398,6 +398,10 @@
         justify-content: center;
         font-size: 14px;
       }
+      .app-avatar img{
+        width: 32px;
+        height: 32px;
+      }
       .chapter-card {
         margin: 16px 16px 0;
         background: linear-gradient(
@@ -412,7 +416,7 @@
         overflow: hidden;
       }
       .chapter-card::before {
-        content: "🕉";
+        content: url(logo.png);
         position: absolute;
         right: 14px;
         top: 50%;
@@ -876,6 +880,9 @@
         opacity: 0.6;
         filter: drop-shadow(0 0 20px rgba(200, 98, 42, 0.4));
       }
+      .verse-icon img{
+        height: 256px;
+      }
       .verse-quote {
         font-family: "Playfair Display", serif;
         font-size: clamp(22px, 3.5vw, 34px);
@@ -1082,6 +1089,9 @@
         justify-content: center;
         font-size: 18px;
       }
+      .footer-brand-icon img{
+        height: 36px;
+      }
       .footer-tagline {
         font-size: 13px;
         color: rgba(245, 230, 216, 0.3);
@@ -1217,7 +1227,7 @@
     <header class="header">
       <div class="container nav">
         <div class="brand">
-          <div class="brand-icon">🕉</div>
+          <div class="brand-icon"><img src="logo.png" alt="" /></div>
           <span>Gita Bodh</span>
         </div>
         <input type="checkbox" id="nav-toggle" hidden />
@@ -1324,7 +1334,7 @@
                         Bhagavad Gita · 18 Chapters
                       </div>
                     </div>
-                    <div class="app-avatar">🕉</div>
+                    <div class="app-avatar"><img src="logo.png" alt=""></div>
                   </div>
                 </div>
                 <div class="chapter-card">
@@ -1491,7 +1501,7 @@
     <section class="verse-section">
       <div class="container">
         <div class="verse-inner reveal">
-          <span class="verse-icon">🕉</span>
+          <span class="verse-icon"><img src="logo.png" alt=""></span>
           <p class="verse-quote">
             "Let right deeds be thy motive, not the fruit which comes from them.
             And live in the action, labour of thine act."
@@ -1588,7 +1598,7 @@
         <div class="footer-top">
           <div>
             <div class="footer-brand-row">
-              <div class="footer-brand-icon">🕉</div>
+              <div class="footer-brand-icon"><img src="logo.png" alt=""></div>
               Gita Bodh
             </div>
             <p class="footer-tagline">
